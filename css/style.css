@@ -365,6 +365,12 @@ ul {
 .footer-column-networks {
   margin-left: 70px;
 }
+
+.footer-column-nav .link:hover,
+.footer-column-nav .link:focus {
+  color: var(--accent-color);
+}
+
 .footer .icon-list {
   flex-direction: row;
 }
