@@ -28,7 +28,7 @@
                 Web<span class="top-logo">Studio</span>
               </a>
             </li>
-            <li>
+            <li class="nav-child">
               <a href="./index.html" class="link selected">Студия</a>
             </li>
             <li>
@@ -67,7 +67,9 @@
             Эффективные решения<br />
             для вашего бизнеса
           </h1>
-          <button type="button" class="hero-but">Заказать услугу</button>
+          <button type="button" class="hero-but" data-open-btn>
+            Заказать услугу
+          </button>
         </div>
       </section>
       <!-- Блок Особенности -->
@@ -168,7 +170,7 @@
               <p class="text">Product Designer</p>
               <ul class="list icon-list">
                 <li class="list-child">
-                  <a href="" class="network-link">
+                  <a href="" class="link">
                     <svg
                       class="icon-network"
                       aria-label="Перейти в профиль инстаграм"
@@ -178,7 +180,7 @@
                   </a>
                 </li>
                 <li class="list-child">
-                  <a href="" class="network-link">
+                  <a href="" class="link">
                     <svg
                       class="icon-network"
                       aria-label="Перейти в профиль твиттер"
@@ -188,7 +190,7 @@
                   </a>
                 </li>
                 <li class="list-child">
-                  <a href="" class="network-link">
+                  <a href="" class="link">
                     <svg
                       class="icon-network"
                       aria-label="Перейти в профиль фуйсбук"
@@ -198,7 +200,7 @@
                   </a>
                 </li>
                 <li class="list-child">
-                  <a href="" class="network-link">
+                  <a href="" class="link">
                     <svg
                       class="icon-network"
                       aria-label="Перейти в профиль линкедин"
@@ -219,7 +221,7 @@
               <p class="text">Frontend Developer</p>
               <ul class="list icon-list">
                 <li class="list-child">
-                  <a href="" class="network-link">
+                  <a href="" class="link">
                     <svg
                       class="icon-network"
                       aria-label="Перейти в профиль инстаграм"
@@ -229,7 +231,7 @@
                   </a>
                 </li>
                 <li class="list-child">
-                  <a href="" class="network-link">
+                  <a href="" class="link">
                     <svg
                       class="icon-network"
                       aria-label="Перейти в профиль твиттер"
@@ -239,7 +241,7 @@
                   </a>
                 </li>
                 <li class="list-child">
-                  <a href="" class="network-link">
+                  <a href="" class="link">
                     <svg
                       class="icon-network"
                       aria-label="Перейти в профиль фуйсбук"
@@ -249,7 +251,7 @@
                   </a>
                 </li>
                 <li class="list-child">
-                  <a href="" class="network-link">
+                  <a href="" class="link">
                     <svg
                       class="icon-network"
                       aria-label="Перейти в профиль линкедин"
@@ -270,7 +272,7 @@
               <p class="text">Marketing</p>
               <ul class="list icon-list">
                 <li class="list-child">
-                  <a href="" class="network-link">
+                  <a href="" class="link">
                     <svg
                       class="icon-network"
                       aria-label="Перейти в профиль инстаграм"
@@ -280,7 +282,7 @@
                   </a>
                 </li>
                 <li class="list-child">
-                  <a href="" class="network-link">
+                  <a href="" class="link">
                     <svg
                       class="icon-network"
                       aria-label="Перейти в профиль твиттер"
@@ -290,7 +292,7 @@
                   </a>
                 </li>
                 <li class="list-child">
-                  <a href="" class="network-link">
+                  <a href="" class="link">
                     <svg
                       class="icon-network"
                       aria-label="Перейти в профиль фуйсбук"
@@ -300,7 +302,7 @@
                   </a>
                 </li>
                 <li class="list-child">
-                  <a href="" class="network-link">
+                  <a href="" class="link">
                     <svg
                       class="icon-network"
                       aria-label="Перейти в профиль линкедин"
@@ -321,7 +323,7 @@
               <p class="text">UI Designer</p>
               <ul class="list icon-list">
                 <li class="list-child">
-                  <a href="" class="network-link">
+                  <a href="" class="link">
                     <svg
                       class="icon-network"
                       aria-label="Перейти в профиль инстаграм"
@@ -331,7 +333,7 @@
                   </a>
                 </li>
                 <li class="list-child">
-                  <a href="" class="network-link">
+                  <a href="" class="link">
                     <svg
                       class="icon-network"
                       aria-label="Перейти в профиль твиттер"
@@ -341,7 +343,7 @@
                   </a>
                 </li>
                 <li class="list-child">
-                  <a href="" class="network-link">
+                  <a href="" class="link">
                     <svg
                       class="icon-network"
                       aria-label="Перейти в профиль фуйсбук"
@@ -351,7 +353,7 @@
                   </a>
                 </li>
                 <li class="list-child">
-                  <a href="" class="network-link">
+                  <a href="" class="link">
                     <svg
                       class="icon-network"
                       aria-label="Перейти в профиль линкедин"
@@ -403,6 +405,15 @@
           </ul>
         </div>
       </section>
+      <div class="backdrop is-hidden" data-backdrop>
+        <div class="modal">
+          <button type="button" class="close-btn" data-close-btn>
+            <svg class="close-icon">
+              <use href="./images/sprite.svg#vector"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
     </main>
     <!--Футер-->
     <footer class="footer">
@@ -429,7 +440,7 @@
           <h3 class="title-third">Присоединяйтесь</h3>
           <ul class="list icon-list">
             <li class="list-child">
-              <a href="" class="network-link">
+              <a href="" class="link">
                 <svg
                   class="icon-network"
                   aria-label="Перейти в профиль инстаграм"
@@ -439,7 +450,7 @@
               </a>
             </li>
             <li class="list-child">
-              <a href="" class="network-link">
+              <a href="" class="link">
                 <svg
                   class="icon-network"
                   aria-label="Перейти в профиль твиттер"
@@ -449,7 +460,7 @@
               </a>
             </li>
             <li class="list-child">
-              <a href="" class="network-link">
+              <a href="" class="link">
                 <svg
                   class="icon-network"
                   aria-label="Перейти в профиль фуйсбук"
@@ -459,7 +470,7 @@
               </a>
             </li>
             <li class="list-child">
-              <a href="" class="network-link">
+              <a href="" class="link">
                 <svg
                   class="icon-network"
                   aria-label="Перейти в профиль линкедин"
@@ -472,5 +483,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
