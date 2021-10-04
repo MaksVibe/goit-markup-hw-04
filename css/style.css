@@ -290,18 +290,26 @@ ul {
   padding: 0 32px 30px 32px;
 }
 
-.icon-network {
-  fill: var(--icon-color);
+.our-team .icon-list .network-link {
+  display: block;
   width: 44px;
   height: 44px;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding: 12px;
+}
+.icon-network {
+  fill: var(--icon-color);
+  width: 20px;
+  height: 20px;
 }
 
-.icon-list .list-child:hover .icon-network,
-.icon-list .list-child:focus .icon-network {
+.network-link:hover,
+.network-link:focus {
   background-color: var(--accent-color);
   border-radius: 50%;
+}
+
+.network-link:hover .icon-network,
+.network-link:focus .icon-network {
   fill: var(--white-color);
 }
 
@@ -363,10 +371,8 @@ ul {
 
 .footer-column-networks .icon-network {
   fill: var(--white-color);
-  background-color: var(--icon-bg-color);
-  border-radius: 50%;
 }
-.footer-column-networks .icon-network:nth-child(-n + 4) {
+.footer-column-networks .network-link:nth-child(-n + 4) {
   margin-right: 10px;
 }
 
@@ -387,10 +393,18 @@ ul {
   font-style: normal;
   color: #ffffff;
 }
+.footer .network-link {
+  background-color: var(--icon-bg-color);
+  border-radius: 50%;
+  display: block;
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+}
 
-.footer .link:hover,
-.footer .link:focus {
-  color: var(--accent-color);
+.footer .network-link:hover,
+.footer .network-link:focus {
+  background-color: var(--accent-color);
 }
 
 /* Фильтры страницы Портфолио */
